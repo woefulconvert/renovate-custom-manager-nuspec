@@ -14,5 +14,6 @@ Expected a PR to update Newtonsoft.Json dependency to version 13.0.4+
 
 ## Link to the Renovate issue or Discussion
 
-https://github.com/renovatebot/renovate/discussions/4549
+https://github.com/renovatebot/renovate/discussions/45499
+
 
