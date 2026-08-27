@@ -1,14 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
   "customManagers": [
     {
-      "description": "Nuspec files manager",
       "customType": "regex",
+      "description": "Nuspec files manager",
       "managerFilePatterns": ["/\\.nuspec$/"],
       "matchStrings": [
-        "<dependency\\s+id=\"(?<depName>.*?)\"\\s+version=\"(?<currentValue>.*?)\"\\s*\\/>"
+        "<dependency\\s+id=\"(?<depName>.*?)\"\\s+version=\"(?<currentValue>.*?)\"\\s*/>"
       ],
-      "datasourceTemplate": "nuget"
+      "datasourceTemplate": "nuget",
+      "versioningTemplate": "nuget"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Bump bare NuGet versions (13.0.1 → 13.0.4)",
+      "matchDatasources": ["nuget"],
+      "matchManagers": ["regex"],
+      "rangeStrategy": "bump",
+      "ignoreUnstable": true
     }
   ]
 }
