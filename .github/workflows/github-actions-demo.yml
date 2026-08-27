@@ -1,5 +1,6 @@
 name: Renovate
 on:
+  workflow_dispatch:
   schedule:
     # The "*" (#42, asterisk) character has special semantics in YAML, so this
     # string has to be quoted.
@@ -15,3 +16,4 @@ jobs:
         with:
           configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
+
