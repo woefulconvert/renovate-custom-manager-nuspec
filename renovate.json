@@ -17,7 +17,7 @@
     {
       "description": "Bump bare NuGet versions (13.0.1 → 13.0.4)",
       "matchDatasources": ["nuget"],
-      "matchManagers": ["regex"],
+      "matchManagers": ["custom.regex"],
       "rangeStrategy": "bump",
       "ignoreUnstable": true
     }
