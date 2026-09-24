@@ -13,7 +13,7 @@
     <copyright>$copyright$</copyright>
     <tags>Tag1 Tag2</tags>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="13.0.1" />
+      <dependency id="Newtonsoft.Json" version="13.0.4" />
     </dependencies>
   </metadata>
 </package>
